@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 40px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul li a, .card a, footer a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  padding: 15px;
+}
+
+li:hover{
+  background-color: rgb(68, 68, 68);
+  opacity: 0.7;
+}
+
+.banner{
+  background-image: linear-gradient(to left, transparent 25%, black 100%), url("./images/Avicii.png");
+  background-position: right;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 525px;
+}
+
+.titulo{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 300px;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar{
+  width: 60px;
+  height: 2px;
+  background-color: rgb(134, 129, 129);
+  position: absolute;
+  margin-top: 35px;
+}
+
+.bio, .career, .dead, .musics{
+  margin-top: 100px;
+}
+
+.biografia, .carreira, .morte, .musicas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.biografia p, .carreira p, .morte p, .musicas p{
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.dates{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dates p:first-child, .dates p:nth-child(3){
+  margin: 0px 10px;
+  font-size: 10px;
+}
+
+.dates p:nth-child(2){
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.dates:hover{
+  background-color: rgb(32, 32, 32);
+  transform:scale(1.1)
+}
+
+.widgets{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content : center;
+
+  gap: 40px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 30px;
+
+  background-color: rgba(32, 32, 32, 0.5);
+}
+
+.card:hover{
+  transform:scale(1.1);
+}
+
+.widgets img{
+  width: 274px;
+  height: 218px;
+
+  border-radius: 30px;
+}
+
+.widgets-infos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.info{
+  font-weight: bold;
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  line-height: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 3px solid rgb(32, 32, 32);
+  border-bottom: 3px solid rgb(32, 32, 32);
+}
+
+
+/* MENU MOBILE */
+
+.menuMobile{
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+.menuMobile img{
+  width: 50px;
+  background-color: #3b3b3b;
+
+  margin: 40px 0px;
+  margin-right: 10px;
+}
+
+/* FIM MENU MOBILE */
+
+@media (max-width: 812px) {
+
+  .titulo{
+    margin-left: 184px;
+  }
+}
+
+@media (max-width: 632px) {
+
+  li{
+    padding: 1px;
+  }
+
+  .titulo{
+    margin-left: 100px;
+  }
+
+  nav ul{
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
+    align-items: center;
+  }
+
+  nav ul li a{
+    color: black;
+  }
+
+  header{
+    height: auto;
+  }
+
+  .logo{
+    padding-left: 20px;
+  }
+
+  .logo img{
+    width: 170px;
+    height: 40px;
+  }
+
+  .menuMobile{
+    display: inline;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .titulo{
+    font-size: 10px;
+    margin-left: 80px;
+  }
+}
