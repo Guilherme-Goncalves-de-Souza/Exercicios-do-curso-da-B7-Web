@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: black;
+
+  font-family: 'Aboreto', cursive;
+}
+
+header{
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 80px;
+
+  border-bottom: 1px solid white;
+
+  background-image: url("https://images7.alphacoders.com/836/836041.jpg");
+  background-position: center;
+
+  color: white;
+}
+
+header p{
+  font-size: 24px;
+  
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+header nav ul li{
+  list-style: none;
+  text-decoration: none;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  padding: 20px;
+
+  color: white;
+}
+
+header nav ul li:hover{
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+  transform: scale(1.5);
+}
+
+section{
+  height: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid white;
+
+  background-image: url("http://getwallpapers.com/wallpaper/full/a/4/a/1060451-stars-background-wallpaper-1920x1080-full-hd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section img{
+  width: 60rem;
+  height: auto;
+}
+
+section .text{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  color: white;
+  font-size: 18px;
+}
+
+.info{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  background-image: url("https://data.1freewallpapers.com/download/stars-glare-black-space.jpg");
+  border-bottom: 1px solid white;
+
+  color: white;
+  height: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p a{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+footer p a:hover{
+  opacity: 0.5;
+}
+
+h1:hover{
+  transform: scale(1.5);
+}
+
+@media (max-width: 1174px){
+  #second{
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 688px){
+  header{
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  header h1:hover{
+    transform: scale(1.1);
+  }
+}
