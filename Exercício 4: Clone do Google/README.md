@@ -1,6 +1,6 @@
 ## Exercício do curso da B7 Web.
 
-### Feito o clone do Google, responsivo e utilizando Flexbox.
+### Feito um clone do Google, responsivo e utilizando Flexbox.
 
 - Exercício passado pelo professor do curso da B7 Web e concluido.
 
