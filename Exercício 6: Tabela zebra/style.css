@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+}
+
+table{
+  color: white;
+  border: 2px solid rgba(255, 205, 42, 0.4);
+}
+
+table thead tr th{
+  background-color:  rgb(230, 252, 31);
+  padding: 15px;
+  color: black;
+}
+
+table tbody tr td{
+  padding: 20px;
+  background-color: rgb(116, 116, 116);
+}
+
+table tbody tr:nth-child(odd) td{
+  padding: 20px;
+  background-color: green;
+}
+
+table tbody tr:hover{
+  opacity: 0.8;
+}
