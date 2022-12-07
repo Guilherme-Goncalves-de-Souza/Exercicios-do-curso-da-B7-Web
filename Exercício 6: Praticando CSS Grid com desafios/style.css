@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: rgb(15,15,15);
+    color: white;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    height: 30rem;
+    opacity: 0.5;
+}
+
+/* Desafio 1 */
+
+.divisor{
+    background-color: white;
+    width: 100%;
+    height: 1px;
+
+    margin-top: 50px;
+}
+
+main{
+    text-align: center;
+}
+
+main h2{
+    margin-top: 50px;
+}
+
+main .container1{
+    margin-top: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "item1 item2 item3 item4"
+    "item5 item6 item3 item7"
+    "item8 item8 item8 item9"
+    "item10 item11 item11 item12"
+    "item10 item13 item14 item15"
+    ;
+}
+
+.item{
+    background-color: gray;
+    border-radius: 7px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font-family: 'Secular One', sans-serif;
+}
+
+.item:hover{
+    opacity: 0.7;
+    color: black;
+    cursor: pointer;
+}
+
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+.item9{
+    grid-area: item9;
+}
+.item10{
+    grid-area: item10;
+}
+.item11{
+    grid-area: item11;
+}
+.item12{
+    grid-area: item12;
+}
+.item13{
+    grid-area: item13;
+}
+.item14{
+    grid-area: item14;
+}
+.item15{
+    grid-area: item15;
+}
+
+/* Fim Desafio 1 */
+
+
+/* Desafio 2 */
+
+main .container2{
+    margin-top: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "item1 item1 item1 item1 item2"
+    "item3 item4 item5 item6 item2"
+    "item3 item7 item8 item9 item2"
+    "item3 item10 item11 item12 item2"
+    "item3 item13 item13 item13 item13"
+    ;
+}
+
+/* Fim Desafio*/
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer strong a{
+    color: rgb(60, 114, 70);
+}
+
+footer strong a:hover{
+    opacity: 0.5;
+}
